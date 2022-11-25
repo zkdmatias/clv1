@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_page"
+    android:background="@color/dgrey">
+
+    <!--HEADER-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/accent1"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/menubtn"
+            android:layout_width="78dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/accent1"
+            android:src="@drawable/ic_sidemenu_foreground" />
+
+        <ImageButton
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/menubtn"
+            android:backgroundTint="@color/accent1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/icon_white" />
+    </RelativeLayout>
+    <!--HEADER END-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profilebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#A09582"
+        android:paddingHorizontal="57dp"
+        android:text="Profile"
+        android:textSize="17dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settingsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilebtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#A09582"
+        android:paddingHorizontal="50dp"
+        android:text="Settings"
+        android:textSize="17dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#A09582"
+        android:paddingHorizontal="70dp"
+        android:text="Back"
+        android:textSize="17dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#A09582"
+        android:paddingHorizontal="57dp"
+        android:text="Logout"
+        android:textSize="17dp" />
+
+</RelativeLayout>

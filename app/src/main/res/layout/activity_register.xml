@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dgrey"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/clicon"
+        android:layout_width="361dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/icon" />
+
+    <!--username-->
+
+    <!--password-->
+
+    <TextView
+        android:id="@+id/registertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clicon"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Register Account"
+        android:textColor="@color/pbrown"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/registertext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registertext3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:layout_toStartOf="@+id/username"
+        android:gravity="left"
+        android:text="Password:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/registertext4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registertext2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="49dp"
+        android:layout_toStartOf="@+id/username"
+        android:gravity="left"
+        android:text="Re-enter Password:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/registertext5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registertext4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/username"
+        android:gravity="left"
+        android:text="Birth date:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/registertext3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clicon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="47dp"
+        android:layout_toStartOf="@+id/username"
+        android:gravity="left"
+        android:text="Username:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <!--Login-->
+
+    <EditText
+        android:id="@+id/regusername"
+        android:layout_width="185dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/registertext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="username"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/regusername2"
+        android:layout_width="183dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/verifypassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+        android:drawablePadding="20dp"
+        android:hint="date dd/mm/yyyy"
+        android:inputType="date"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/regpassword"
+        android:layout_width="186dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/regusername"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:drawablePadding="20dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/verifypassword"
+        android:layout_width="183dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/regpassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:drawablePadding="20dp"
+        android:hint="re-enter password"
+        android:inputType="textPassword"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next1btn"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#A09582"
+        android:paddingHorizontal="30dp"
+        android:text="Next"
+        android:textSize="17dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/reg1btn"
+        android:backgroundTint="#A09582"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:paddingHorizontal="30dp"
+        android:text="Back"
+        android:textSize="17dp" />
+
+</RelativeLayout>

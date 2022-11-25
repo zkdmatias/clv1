@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dgrey"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/clicon"
+        android:layout_width="361dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/registertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clicon"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Register Profile"
+        android:textColor="@color/pbrown"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="left"
+        android:text="Last Name:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="49dp"
+        android:gravity="left"
+        android:text="Gender:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/prns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Pronouns:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registertext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="47dp"
+        android:gravity="left"
+        android:text="First Name:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <!--Login-->
+
+    <EditText
+        android:id="@+id/fnameinput"
+        android:layout_width="185dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/registertext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawablePadding="20dp"
+        android:hint="first name"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/prnsinput"
+        android:layout_width="183dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/genderinput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawablePadding="20dp"
+        android:hint="pronouns"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/lnameinput"
+        android:layout_width="186dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/fnameinput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawablePadding="20dp"
+        android:hint="last name"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/genderinput"
+        android:layout_width="183dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/lnameinput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawablePadding="20dp"
+        android:hint="gender"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/regbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#A09582"
+        android:paddingHorizontal="30dp"
+        android:text="Register"
+        android:textSize="17dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/regbtn"
+        android:backgroundTint="#A09582"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:paddingHorizontal="30dp"
+        android:text="Back"
+        android:textSize="17dp" />
+
+</RelativeLayout>
