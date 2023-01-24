@@ -16,14 +16,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView username =(TextView) findViewById(R.id.username);
-        TextView password =(TextView) findViewById(R.id.password);
+        TextView uninput =(TextView) findViewById(R.id.uninput);
+        TextView passinput =(TextView) findViewById(R.id.passinput);
 
         MaterialButton loginbtn = (MaterialButton) findViewById(R.id.loginbtn);
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
+                if (uninput.getText().toString().equals("admin") && passinput.getText().toString().equals("admin")) {
                     //correct
                     startActivity(new Intent(MainActivity.this, Home_page.class));
                     Toast.makeText(MainActivity.this, "LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show();

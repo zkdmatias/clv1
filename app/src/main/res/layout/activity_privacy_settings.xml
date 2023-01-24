@@ -39,7 +39,123 @@
             android:scaleX="0.8"
             android:scaleY="0.8"
             android:src="@drawable/icon_white" />
-
     </RelativeLayout>
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="582dp"
+        android:layout_marginTop="-215dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_baseline_settings_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Privacy Settings"
+        android:textColor="@color/accent1"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="left"
+        android:text="Profile"
+        android:textColor="@color/pbrown"
+        android:textSize="26dp" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label1"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="47dp"
+        android:gravity="left"
+        android:text="Public Profile"
+        android:textColor="@color/pbrown"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="47dp"
+        android:gravity="left"
+        android:text="Public Birthday"
+        android:textColor="@color/pbrown"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="47dp"
+        android:gravity="left"
+        android:text="Public Gender"
+        android:textColor="@color/pbrown"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="47dp"
+        android:gravity="left"
+        android:text="Public Pronouns"
+        android:textColor="@color/pbrown"
+        android:textSize="20dp" />
+
+    <!--Login-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#A09582"
+        android:paddingHorizontal="55dp"
+        android:text="SAVE"
+        android:textSize="17dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/savebtn"
+        android:backgroundTint="#A09582"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:paddingHorizontal="30dp"
+        android:text="Back"
+        android:textSize="17dp" />
+
 
 </RelativeLayout>

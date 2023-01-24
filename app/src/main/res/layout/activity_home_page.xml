@@ -42,4 +42,38 @@
 
     </RelativeLayout>
 
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/tt" />
+
+    <EditText
+        android:id="@+id/statsinput"
+        android:layout_width="373dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/layout_bg"
+        android:hint="Post a status..."
+        android:padding="10dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/poststats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/accent2"
+        android:paddingHorizontal="90dp"
+        android:text="Post"
+        android:textSize="17dp" />
+
 </RelativeLayout>

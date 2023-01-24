@@ -41,6 +41,238 @@
             android:src="@drawable/icon_white" />
     </RelativeLayout>
 
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="582dp"
+        android:layout_marginTop="-215dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_baseline_settings_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:text="General Settings"
+        android:textColor="@color/accent1"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:layout_width="368dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/illus" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/ic_baseline_cloud_upload_24" />
+
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/test" />
+
+
+
+    <TextView
+        android:id="@+id/fnamet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="47dp"
+        android:gravity="left"
+        android:text="First Name:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/lnamet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fnamet"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="left"
+        android:text="Last Name:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/gendert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnamet"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="49dp"
+        android:gravity="left"
+        android:text="Gender:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/prnst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gendert"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Pronouns:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+
+    <!--Login-->
+
+    <TextView
+        android:id="@+id/loct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prnst"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="Location:"
+        android:textColor="@color/pbrown"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/fnameinputt"
+        android:layout_width="185dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawablePadding="20dp"
+        android:hint="first name"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/prnsinputt"
+        android:layout_width="183dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/genderinputt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawablePadding="20dp"
+        android:hint="pronouns"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/locinputt"
+        android:layout_width="183dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/prnsinputt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawablePadding="20dp"
+        android:hint="location"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/lnameinputt"
+        android:layout_width="186dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/fnameinputt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawablePadding="20dp"
+        android:hint="last name"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/genderinputt"
+        android:layout_width="183dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/lnameinputt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/layout_bg"
+        android:drawablePadding="20dp"
+        android:hint="gender"
+        android:padding="7dp"
+        android:textColor="@color/lgrey"
+        android:textColorHint="@color/lgrey"
+        android:textSize="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#A09582"
+        android:paddingHorizontal="55dp"
+        android:text="SAVE"
+        android:textSize="17dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/savebtn"
+        android:backgroundTint="#A09582"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:paddingHorizontal="30dp"
+        android:text="Back"
+        android:textSize="17dp" />
 
 
 </RelativeLayout>

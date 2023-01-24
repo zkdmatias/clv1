@@ -35,7 +35,7 @@
 
     <!--username-->
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/uninput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/signin"
@@ -51,10 +51,10 @@
 
     <!--password-->
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passinput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/username"
+        android:layout_below="@+id/uninput"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="50dp"
@@ -62,17 +62,17 @@
         android:drawableLeft="@drawable/ic_baseline_lock_open_24"
         android:drawablePadding="20dp"
         android:hint="password"
+        android:inputType="textPassword"
         android:padding="7dp"
         android:textColor="@color/lgrey"
-        android:textColorHint="@color/lgrey"
-        android:inputType="textPassword"/>
+        android:textColorHint="@color/lgrey" />
 
     <!--Login-->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/loginbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/passinput"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
